@@ -1,0 +1,27 @@
+<h1>True or False</h1>
+<div id="text" style="display:none;">Fire is Cold</div>
+<button onclick="chpok('text')"><h2 onclick="chpok('arrow')">True</h2></button>
+<button onclick="chpok('arrow')"><h2>False</h2></button>
+<h2 id="arrow" onclick="chpok('block1')" style="display:none;">Next</h2>
+
+<div class="block1" id="block1" style="display: none;">
+  <h1>True or False</h1>
+  <div id="text2" style="display:none;">You stand on a Chair</div>
+  <button onclick="chpok('text2')"><h2 onclick="chpok('arrow2')">True</h2></button>
+  <button onclick="chpok('arrow2')"><h2>False</h2></button>
+  <h2 id="arrow2" onclick="chpok('block2')" style="display:none;">Next</h2>
+</div>
+
+<div class="block2" id="block2" style="display: none;">
+  <h1>True or False</h1>
+  <div id="text3" style="display:none;">The Earth is Flat</div>
+  <button onclick="chpok('text3')"><h2 onclick="chpok('arrow3')">True</h2></button>
+  <button onclick="chpok('arrow3')"><h2>False</h2></button>
+  <h2 id="arrow3" style="display:none;">Next</h2>
+</div>
+
+<script>function chpok(id) {
+  elem=document.getElementById(id);
+  state=elem.style.display;
+  if (state=='none') elem.style.display='';
+}</script>
